@@ -1,26 +1,24 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+@font-face {
+  font-family: 'Amiga Forever';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Amiga Forever'),
+    url('https://fonts.cdnfonts.com/s/7662/amiga4ever.woff') format('woff');
 }
-
-a {
-  color: inherit;
-  text-decoration: none;
+@font-face {
+  font-family: 'Amiga Forever Pro2';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Amiga Forever Pro2'),
+    url('https://fonts.cdnfonts.com/s/7662/amiga4ever pro2.woff') format('woff');
 }
-
-* {
-  box-sizing: border-box;
+@font-face {
+  font-family: 'Amiga Forever Pro';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Amiga Forever Pro'),
+    url('https://fonts.cdnfonts.com/s/7662/amiga4ever pro.woff') format('woff');
 }
-
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
