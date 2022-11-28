@@ -1,3 +1,6 @@
+'use client';
+import Goku from '../components/Goku';
+
 export default function HomePage() {
-  return <h1>Hola Mundo</h1>;
+  return <Goku level={4} />;
 }

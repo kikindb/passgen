@@ -46,7 +46,7 @@ export default function Goku({ level = 0 }) {
         <div className={[classes, change].join(' ')}></div>
       </div>
       <div>
-        <h2 className='text-xl mb-2'>
+        <h2 className='text-xl mb-2 font-amiga'>
           PASSWORD KI:
           <button
             className='text-lg mb-2 bg-orange-600 p-1'
@@ -56,12 +56,12 @@ export default function Goku({ level = 0 }) {
             +
           </button>
         </h2>
-        <h3 className='md:text-xl mb-2'>
+        <h3 className='md:text-xl mb-2 font-amiga'>
           {LEVEL_NAMES[levelState].toUpperCase()}
         </h3>
         <div className='relative'>
           <input
-            className='bg-black w-full text-center md:text-xl p-2 rounded-xl text-white border-dashed border-4 border-gray-500'
+            className='bg-black w-full text-center md:text-xl p-2 rounded-xl text-white border-dashed border-4 border-gray-500 font-amiga'
             type='text'
             name='passgen'
             id='passgen'

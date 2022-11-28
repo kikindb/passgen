@@ -1,42 +1,18 @@
 import './../styles/globals.css';
-import Link from 'next/link';
-
-const navLinks = [
-  {
-    label: 'Home',
-    route: '/',
-  },
-  {
-    label: 'About',
-    route: '/about',
-  },
-  {
-    label: 'Password Generator',
-    route: '/passgen',
-  },
-];
 
 export default function RootLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
+  const randomBg = `bg-bg0${Math.floor(Math.random() * 4) + 1}`;
   return (
     <html>
       <head />
-      <body className='bg-slate-700 text-white'>
-        <header>
-          <nav>
-            <ul>
-              {navLinks.map(({ route, label }) => (
-                <li key={route}>
-                  <Link href={route}>{label}</Link>
-                </li>
-              ))}
-            </ul>
-          </nav>
-        </header>
-        {children}
+      <body className={`bg-slate-800 text-white ${randomBg} bg-cover`}>
+        <main className='flex justify-center items-center pt-4'>
+          {children}
+        </main>
       </body>
     </html>
   );

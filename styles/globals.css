@@ -1,3 +1,6 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 @font-face {
   font-family: 'Amiga Forever';
   font-style: normal;
@@ -5,20 +8,3 @@
   src: local('Amiga Forever'),
     url('https://fonts.cdnfonts.com/s/7662/amiga4ever.woff') format('woff');
 }
-@font-face {
-  font-family: 'Amiga Forever Pro2';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Amiga Forever Pro2'),
-    url('https://fonts.cdnfonts.com/s/7662/amiga4ever pro2.woff') format('woff');
-}
-@font-face {
-  font-family: 'Amiga Forever Pro';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Amiga Forever Pro'),
-    url('https://fonts.cdnfonts.com/s/7662/amiga4ever pro.woff') format('woff');
-}
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
