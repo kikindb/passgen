@@ -85,7 +85,7 @@ export default function Goku({ level = 0 }) {
             </svg>
           </div>
         </div>
-        {isCopied && <p className='mt-2'>Copied</p>}
+        {isCopied && <p className='mt-2 font-amiga'>Copied</p>}
       </div>
     </div>
   );
